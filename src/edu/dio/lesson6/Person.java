@@ -1,3 +1,5 @@
+package edu.dio.lesson6;
+
 /**
  * Created by Vladimir V. Kravchenko on 14.05.2014.
  */
@@ -54,7 +56,7 @@ public class Person {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Person{");
+        final StringBuilder sb = new StringBuilder("edu.dio.lesson6.Person{");
         sb.append("firstName='").append(firstName).append('\'');
         sb.append(", secondName='").append(secondName).append('\'');
         sb.append(", age=").append(age);
