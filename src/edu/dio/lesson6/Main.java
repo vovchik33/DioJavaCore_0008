@@ -10,6 +10,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        //local code review (vtegza): try to use log4j of common logging @ 17.05.14
         ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(Main.class.getName());
         logger.setLevel(Level.DEBUG);
         logger.debug("START CALCULATING...");
@@ -27,7 +28,13 @@ public class Main {
                 Arrays.asList(
                         new Person[]{
                                 new Person.Builder().setFirstName("Alex").setSecondName("Kravchenko").setAge(22).setMail("vovchik33@gmail.com").build(),
-                                new Person.Builder().setFirstName("Vlad").setSecondName("Panchenko").setAge(32).setMail("vlad@gmail.com").build()
+                                //local code review (vtegza): alwayse try to fit to 80-120 symbols in one line @ 17.05.14
+                                new Person.Builder()
+                                        .setFirstName("Vlad")
+                                        .setSecondName("Panchenko")
+                                        .setAge(32)
+                                        .setMail("vlad@gmail.com")
+                                        .build()
                         }
                 )
         );
